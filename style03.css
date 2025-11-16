@@ -1,0 +1,66 @@
+body { 
+  background: linear-gradient(#DA70D6, #6495ED); 
+}
+
+.flex {
+  display: flex; /*横並び*/
+}
+.flex .image {
+ 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.flex .text {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+p{
+	
+    font-size:30px;
+
+	}
+h1{
+	 font-size:45px;
+	 color: #E0FFFF;			/* 見出しテキストの色を指定する */
+	padding-left:10px;		/* ボックス内左側の余白を指定する */
+	border-left: 10px solid #E0FFFF;	/* ボーダー左側のスタイルを指定する */
+  	border-bottom: 1px dashed #E0FFFF; 	/* ボーダー下部のスタイルを指定する */
+}
+h2{
+	font-size:35px;
+	color: #326693;
+}
+ul, ol {
+  padding: 0;
+}
+
+ul li {
+ font-size:35px;
+  position: relative;
+  list-style-type: none!important;/*ポチ消す*/
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  background: #dbebf8;
+  vertical-align: middle;
+  color: #505050;
+  border-radius: 15px 0px 0px 15px;/*左側の角丸く*/
+}
+
+ul li:before{ 
+	 font-size:35px;
+  display:inline-block; 
+  vertical-align: middle;
+  /*以下白丸つくる*/
+  content:'';
+  width:1em;
+  height: 1em;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+p{
+	 color: #E0FFFF;
+}
