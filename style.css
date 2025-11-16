@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+.slide-container {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.slide-wrapper {
+  display: flex;
+  animation: slide-flow 20s infinite linear 1s both;
+   text-align: center;
+}
+.slide{
+  width: 300px;
+  object-fit:cover;
+  border: 1px solid #ddd;
+}
+@keyframes slide-flow {
+     0% {transform: translateX(0);}
+ 100% {transform: translateX(-100%);}
+}
+ .slide-paused:hover .slide-wrapper {
+   animation-play-state: paused;
+ }
+ .slide-paused:hover .slide-wrapper img:hover {
+   opacity: .8;
+   cursor: grabbing;
+ }
+ 
+h1 {
+	font-size: 50px;
+  	color: #326693;			/* 見出しテキストの色を指定する */
+	padding-left:10px;		/* ボックス内左側の余白を指定する */
+	border-left: 10px solid #31a9ee;	/* ボーダー左側のスタイルを指定する */
+  	border-bottom: 1px dashed #31a9ee; 	/* ボーダー下部のスタイルを指定する */
+}
+p{
+font-size: 30px;
+}
+
+.japan{
+	background-color:#E0FFFF;
+}
+.aira{
+	background-color:#B0E0E6;
+}
+u{
+	color:#326693;
+}
+.inyou{
+	font-size: 15px;
+}
